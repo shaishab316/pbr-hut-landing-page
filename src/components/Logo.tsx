@@ -27,7 +27,7 @@ export const Logo: React.FC<LogoProps> = ({
   return (
     <div className={`inline-flex items-center gap-3 select-none ${sizeScales[size]} ${className}`}>
       {/* SVG Hut Icon exactly matching the brand logo */}
-      <div className="relative flex-shrink-0 flex items-center justify-center">
+      <div className="relative shrink-0 flex items-center justify-center">
         <svg
           width="48"
           height="48"
@@ -107,13 +107,6 @@ export const Logo: React.FC<LogoProps> = ({
             }}
           >
             Hut
-          </span>
-          
-          {/* Jamaican Badge */}
-          <span className={`text-[9px] uppercase font-extrabold tracking-widest px-1.5 py-0.5 rounded-md ${
-            isDarkBg ? 'bg-[#F5A623]/20 text-[#F5A623] border border-[#F5A623]/30' : 'bg-[#0A5C36]/10 text-[#0A5C36] border border-[#0A5C36]/20'
-          }`}>
-            & Events
           </span>
         </div>
 

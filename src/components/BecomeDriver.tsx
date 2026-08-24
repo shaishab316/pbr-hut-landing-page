@@ -10,8 +10,8 @@ export const BecomeDriver: React.FC<BecomeDriverProps> = ({ onOpenDriverApp }) =
   return (
     <section id="drivers" className="py-20 bg-[#0A5C36] text-white relative overflow-hidden">
       {/* Caribbean decorative ambient accents */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#F5A623]/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#C33600]/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-125 h-125 bg-[#F5A623]/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-125 h-125 bg-[#C33600]/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -40,7 +40,7 @@ export const BecomeDriver: React.FC<BecomeDriverProps> = ({ onOpenDriverApp }) =
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full mb-8">
 
               <div className="bg-black/25 backdrop-blur-xs border border-white/15 rounded-2xl p-4 flex items-start gap-3.5">
-                <div className="p-2 rounded-xl bg-[#F5A623] text-stone-950 flex-shrink-0">
+                <div className="p-2 rounded-xl bg-[#F5A623] text-stone-950 shrink-0">
                   <Clock className="w-5 h-5" />
                 </div>
                 <div>
@@ -50,7 +50,7 @@ export const BecomeDriver: React.FC<BecomeDriverProps> = ({ onOpenDriverApp }) =
               </div>
 
               <div className="bg-black/25 backdrop-blur-xs border border-white/15 rounded-2xl p-4 flex items-start gap-3.5">
-                <div className="p-2 rounded-xl bg-[#F5A623] text-stone-950 flex-shrink-0">
+                <div className="p-2 rounded-xl bg-[#F5A623] text-stone-950 shrink-0">
                   <BellRing className="w-5 h-5" />
                 </div>
                 <div>
@@ -60,7 +60,7 @@ export const BecomeDriver: React.FC<BecomeDriverProps> = ({ onOpenDriverApp }) =
               </div>
 
               <div className="bg-black/25 backdrop-blur-xs border border-white/15 rounded-2xl p-4 flex items-start gap-3.5">
-                <div className="p-2 rounded-xl bg-[#F5A623] text-stone-950 flex-shrink-0">
+                <div className="p-2 rounded-xl bg-[#F5A623] text-stone-950 shrink-0">
                   <Navigation className="w-5 h-5" />
                 </div>
                 <div>
@@ -70,7 +70,7 @@ export const BecomeDriver: React.FC<BecomeDriverProps> = ({ onOpenDriverApp }) =
               </div>
 
               <div className="bg-black/25 backdrop-blur-xs border border-white/15 rounded-2xl p-4 flex items-start gap-3.5">
-                <div className="p-2 rounded-xl bg-[#F5A623] text-stone-950 flex-shrink-0">
+                <div className="p-2 rounded-xl bg-[#F5A623] text-stone-950 shrink-0">
                   <DollarSign className="w-5 h-5" />
                 </div>
                 <div>
@@ -102,7 +102,7 @@ export const BecomeDriver: React.FC<BecomeDriverProps> = ({ onOpenDriverApp }) =
 
           {/* Right Column: Driver App Phone & Earnings Mockup */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[320px] sm:max-w-[340px]">
+            <div className="relative w-full max-w-[320px] sm:max-w-85">
 
               {/* Background Glow */}
               <div className="absolute inset-0 bg-[#F5A623]/20 rounded-[44px] blur-2xl transform scale-95" />
@@ -134,7 +134,7 @@ export const BecomeDriver: React.FC<BecomeDriverProps> = ({ onOpenDriverApp }) =
                   </div>
 
                   {/* Today's Earnings Card */}
-                  <div className="bg-gradient-to-br from-[#0A5C36] to-[#08482A] text-white p-3.5 rounded-2xl shadow-sm">
+                  <div className="bg-linear-to-br from-[#0A5C36] to-[#08482A] text-white p-3.5 rounded-2xl shadow-sm">
                     <div className="flex justify-between items-center text-[10px] text-emerald-200">
                       <span>Today&apos;s Earnings</span>
                       <span className="text-[#F5A623] font-bold">8 Trips Completed</span>

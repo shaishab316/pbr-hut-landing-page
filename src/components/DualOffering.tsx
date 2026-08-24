@@ -34,10 +34,10 @@ export const DualOffering: React.FC<DualOfferingProps> = ({ onOpenMenu, onOpenEv
           {/* Card 1: Restaurant Meals */}
           <div 
             id="offering-card-restaurant"
-            className="group bg-white rounded-[24px] p-6 sm:p-8 border border-stone-200/80 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between relative overflow-hidden"
+            className="group bg-white rounded-3xl p-6 sm:p-8 border border-stone-200/80 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between relative overflow-hidden"
           >
             {/* Top Accent Line */}
-            <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#C33600] to-[#F5A623]" />
+            <div className="absolute top-0 left-0 right-0 h-1.5 bg-linear-to-r from-[#C33600] to-[#F5A623]" />
 
             <div>
               {/* Image with Tag */}
@@ -48,7 +48,7 @@ export const DualOffering: React.FC<DualOfferingProps> = ({ onOpenMenu, onOpenEv
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-black/20" />
                 
                 {/* Floating Category Pill */}
                 <div className="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#0A5C36] text-white text-xs font-bold shadow-md">
@@ -77,20 +77,20 @@ export const DualOffering: React.FC<DualOfferingProps> = ({ onOpenMenu, onOpenEv
               {/* Highlights list */}
               <ul className="space-y-2.5 text-xs sm:text-sm text-stone-700 font-medium">
                 <li className="flex items-center gap-2.5">
-                  <span className="w-5 h-5 rounded-full bg-[#0A5C36]/10 text-[#0A5C36] flex items-center justify-center flex-shrink-0">
-                    <Check className="w-3.5 h-3.5 stroke-[3]" />
+                  <span className="w-5 h-5 rounded-full bg-[#0A5C36]/10 text-[#0A5C36] flex items-center justify-center shrink-0">
+                    <Check className="w-3.5 h-3.5 stroke-3" />
                   </span>
                   <span>Cooked to order with authentic Jamaican Scotch bonnet &amp; pimento</span>
                 </li>
                 <li className="flex items-center gap-2.5">
-                  <span className="w-5 h-5 rounded-full bg-[#0A5C36]/10 text-[#0A5C36] flex items-center justify-center flex-shrink-0">
-                    <Check className="w-3.5 h-3.5 stroke-[3]" />
+                  <span className="w-5 h-5 rounded-full bg-[#0A5C36]/10 text-[#0A5C36] flex items-center justify-center shrink-0">
+                    <Check className="w-3.5 h-3.5 stroke-3" />
                   </span>
                   <span>Delivered in thermal insulation warmers to protect crispness</span>
                 </li>
                 <li className="flex items-center gap-2.5">
-                  <span className="w-5 h-5 rounded-full bg-[#0A5C36]/10 text-[#0A5C36] flex items-center justify-center flex-shrink-0">
-                    <Check className="w-3.5 h-3.5 stroke-[3]" />
+                  <span className="w-5 h-5 rounded-full bg-[#0A5C36]/10 text-[#0A5C36] flex items-center justify-center shrink-0">
+                    <Check className="w-3.5 h-3.5 stroke-3" />
                   </span>
                   <span>Instant courier dispatch or advance family dinner bookings</span>
                 </li>
@@ -101,10 +101,10 @@ export const DualOffering: React.FC<DualOfferingProps> = ({ onOpenMenu, onOpenEv
           {/* Card 2: Event Supplies */}
           <div 
             id="offering-card-events"
-            className="group bg-white rounded-[24px] p-6 sm:p-8 border border-stone-200/80 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between relative overflow-hidden"
+            className="group bg-white rounded-3xl p-6 sm:p-8 border border-stone-200/80 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between relative overflow-hidden"
           >
             {/* Top Accent Line */}
-            <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#F5A623] to-[#0A5C36]" />
+            <div className="absolute top-0 left-0 right-0 h-1.5 bg-linear-to-r from-[#F5A623] to-[#0A5C36]" />
 
             <div>
               {/* Image with Tag */}
@@ -115,7 +115,7 @@ export const DualOffering: React.FC<DualOfferingProps> = ({ onOpenMenu, onOpenEv
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-black/20" />
                 
                 {/* Floating Category Pill */}
                 <div className="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#F5A623] text-stone-950 text-xs font-bold shadow-md">
@@ -144,20 +144,20 @@ export const DualOffering: React.FC<DualOfferingProps> = ({ onOpenMenu, onOpenEv
               {/* Highlights list */}
               <ul className="space-y-2.5 text-xs sm:text-sm text-stone-700 font-medium">
                 <li className="flex items-center gap-2.5">
-                  <span className="w-5 h-5 rounded-full bg-[#F5A623]/20 text-[#0A5C36] flex items-center justify-center flex-shrink-0">
-                    <Check className="w-3.5 h-3.5 stroke-[3]" />
+                  <span className="w-5 h-5 rounded-full bg-[#F5A623]/20 text-[#0A5C36] flex items-center justify-center shrink-0">
+                    <Check className="w-3.5 h-3.5 stroke-3" />
                   </span>
                   <span>Waterproof, tamper-proof Tyvek &amp; vinyl event wristbands in bulk</span>
                 </li>
                 <li className="flex items-center gap-2.5">
-                  <span className="w-5 h-5 rounded-full bg-[#F5A623]/20 text-[#0A5C36] flex items-center justify-center flex-shrink-0">
-                    <Check className="w-3.5 h-3.5 stroke-[3]" />
+                  <span className="w-5 h-5 rounded-full bg-[#F5A623]/20 text-[#0A5C36] flex items-center justify-center shrink-0">
+                    <Check className="w-3.5 h-3.5 stroke-3" />
                   </span>
                   <span>Complete buffet chafing dish sets, burners &amp; palm-leaf tableware</span>
                 </li>
                 <li className="flex items-center gap-2.5">
-                  <span className="w-5 h-5 rounded-full bg-[#F5A623]/20 text-[#0A5C36] flex items-center justify-center flex-shrink-0">
-                    <Check className="w-3.5 h-3.5 stroke-[3]" />
+                  <span className="w-5 h-5 rounded-full bg-[#F5A623]/20 text-[#0A5C36] flex items-center justify-center shrink-0">
+                    <Check className="w-3.5 h-3.5 stroke-3" />
                   </span>
                   <span>Book delivery up to 60 days ahead with guaranteed date holds</span>
                 </li>

@@ -8,7 +8,7 @@ export const TrustCommunity: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Story Block: Family-Owned Roots in Jamaica */}
-        <div className="bg-white rounded-[32px] p-8 sm:p-12 border border-stone-200/80 shadow-md mb-20">
+        <div className="bg-white rounded-4xl p-8 sm:p-12 border border-stone-200/80 shadow-md mb-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             
             {/* Left Story Text */}
@@ -56,7 +56,7 @@ export const TrustCommunity: React.FC = () => {
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-black/20" />
                 
                 {/* Overlay Badge */}
                 <div className="absolute bottom-5 left-5 right-5 text-white">
@@ -92,7 +92,7 @@ export const TrustCommunity: React.FC = () => {
             <div
               key={t.id}
               id={`testimonial-${t.id}`}
-              className="bg-white rounded-[24px] p-7 border border-stone-200/80 shadow-xs hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between text-left relative"
+              className="bg-white rounded-3xl p-7 border border-stone-200/80 shadow-xs hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between text-left relative"
             >
               <div className="space-y-4">
                 {/* Quote Icon & Stars */}

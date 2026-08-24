@@ -49,7 +49,7 @@ export const HowItWorks: React.FC = () => {
   ];
 
   return (
-    <section id="how-it-works" className="py-20 bg-gradient-to-b from-[#FAF1E3] to-[#FDF8F0] relative overflow-hidden">
+    <section id="how-it-works" className="py-20 bg-linear-to-b from-[#FAF1E3] to-[#FDF8F0] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -70,7 +70,7 @@ export const HowItWorks: React.FC = () => {
         <div className="relative">
           
           {/* Subtle Connecting Line on Desktop */}
-          <div className="hidden lg:block absolute top-1/2 left-16 right-16 h-0.5 bg-gradient-to-r from-[#0A5C36] via-[#F5A623] to-[#C33600] -translate-y-12 z-0 opacity-30" />
+          <div className="hidden lg:block absolute top-1/2 left-16 right-16 h-0.5 bg-linear-to-r from-[#0A5C36] via-[#F5A623] to-[#C33600] -translate-y-12 z-0 opacity-30" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 relative z-10">
             {steps.map((step, idx) => {
@@ -79,7 +79,7 @@ export const HowItWorks: React.FC = () => {
                 <div
                   key={step.num}
                   id={`how-it-works-step-${step.num}`}
-                  className="bg-white rounded-[24px] p-6 sm:p-7 border border-stone-200/80 shadow-xs hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center relative group"
+                  className="bg-white rounded-3xl p-6 sm:p-7 border border-stone-200/80 shadow-xs hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center relative group"
                 >
                   {/* Top Step Pill */}
                   <span className="absolute -top-3 px-3 py-0.5 rounded-full bg-stone-900 text-white text-[11px] font-extrabold tracking-wider uppercase shadow-xs">

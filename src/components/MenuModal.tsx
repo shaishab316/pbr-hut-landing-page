@@ -142,7 +142,7 @@ export const MenuModal: React.FC<MenuModalProps> = ({
                   <img
                     src={item.imageUrl}
                     alt={item.name}
-                    className="w-24 h-24 rounded-xl object-cover flex-shrink-0"
+                    className="w-24 h-24 rounded-xl object-cover shrink-0"
                     referrerPolicy="no-referrer"
                   />
                   <div className="flex-1 min-w-0">
@@ -186,7 +186,7 @@ export const MenuModal: React.FC<MenuModalProps> = ({
                   <img
                     src={item.imageUrl}
                     alt={item.name}
-                    className="w-24 h-24 rounded-xl object-cover flex-shrink-0"
+                    className="w-24 h-24 rounded-xl object-cover shrink-0"
                     referrerPolicy="no-referrer"
                   />
                   <div className="flex-1 min-w-0">

@@ -45,7 +45,7 @@ export const KeyFeatures: React.FC = () => {
             <div
               key={feature.id}
               id={`feature-card-${idx}`}
-              className="group bg-white rounded-[24px] p-7 sm:p-8 border border-stone-200/80 shadow-xs hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
+              className="group bg-white rounded-3xl p-7 sm:p-8 border border-stone-200/80 shadow-xs hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between mb-5">

@@ -1,9 +1,7 @@
 'use client';
-
 import React, { useState, useEffect } from 'react';
 import { Logo } from './Logo';
-
-import { Download, Menu as MenuIcon, X, PhoneCall, Sparkles } from 'lucide-react';
+import { Download, Menu as MenuIcon, X, Sparkles } from 'lucide-react';
 
 interface NavbarProps {
   onOpenDownload: () => void;
