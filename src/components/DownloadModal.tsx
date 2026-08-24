@@ -1,8 +1,5 @@
 'use client';
-
-import React, { useState } from 'react';
-
-import { X, Apple, Play, QrCode, Smartphone, CheckCircle2, ShieldCheck, Sparkles, Send } from 'lucide-react';
+import { X, Apple, Play, Sparkles } from 'lucide-react';
 
 interface DownloadModalProps {
   isOpen: boolean;
@@ -10,20 +7,9 @@ interface DownloadModalProps {
 }
 
 export const DownloadModal: React.FC<DownloadModalProps> = ({ isOpen, onClose }) => {
-  const [phoneNumber, setPhoneNumber] = useState('');
-  const [smsSent, setSmsSent] = useState(false);
 
   if (!isOpen) return null;
 
-  const handleSms = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!phoneNumber) return;
-    setSmsSent(true);
-    setTimeout(() => {
-      setSmsSent(false);
-      setPhoneNumber('');
-    }, 4000);
-  };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/65 backdrop-blur-sm animate-in fade-in duration-200">
@@ -85,41 +71,6 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ isOpen, onClose })
               </div>
             </a>
           </div>
-
-          {/* Quick SMS Text Link */}
-          <div className="pt-2 border-t border-stone-100 text-left">
-            <p className="text-xs font-bold text-stone-700 mb-2 flex items-center gap-1.5">
-              <Smartphone className="w-3.5 h-3.5 text-[#0A5C36]" />
-              Send download link to phone:
-            </p>
-            <form onSubmit={handleSms} className="flex gap-2">
-              <div className="relative flex-1">
-                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-xs font-bold text-stone-400">
-                  +1(876)
-                </span>
-                <input
-                  type="tel"
-                  value={phoneNumber}
-                  onChange={(e) => setPhoneNumber(e.target.value)}
-                  placeholder="555-0123"
-                  className="w-full pl-18 pr-3 py-2 rounded-xl bg-stone-50 border border-stone-200 text-xs font-medium focus:outline-hidden focus:ring-2 focus:ring-[#0A5C36]"
-                />
-              </div>
-              <button
-                type="submit"
-                className="px-4 py-2 bg-[#C33600] hover:bg-[#a82e00] text-white font-bold text-xs rounded-xl transition-colors cursor-pointer"
-              >
-                Send
-              </button>
-            </form>
-
-            {smsSent && (
-              <div className="mt-2 text-xs font-bold text-[#0A5C36] flex items-center gap-1">
-                <CheckCircle2 className="w-3.5 h-3.5" /> Link sent to +1(876) {phoneNumber}!
-              </div>
-            )}
-          </div>
-
         </div>
 
       </div>

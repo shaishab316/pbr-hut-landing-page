@@ -83,15 +83,6 @@ export const BecomeDriver: React.FC<BecomeDriverProps> = ({ onOpenDriverApp }) =
 
             {/* CTA Button (Gold / Mango Color) */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
-              <button
-                id="driver-apply-btn"
-                onClick={onOpenDriverApp}
-                className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-[#F5A623] hover:bg-[#e09418] text-stone-950 font-extrabold text-base shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer group"
-              >
-                <span>Apply to Drive Today</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-
               <span className="text-xs text-stone-300 text-center sm:text-left flex items-center justify-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-[#F5A623]" />
                 Must have valid Jamaican driver’s license &amp; insured vehicle/bike

@@ -12,7 +12,6 @@ import { TrustCommunity } from '../components/TrustCommunity';
 import { FinalCTA } from '../components/FinalCTA';
 import { Footer } from '../components/Footer';
 import { MenuModal } from '../components/MenuModal';
-import { DriverApplicationModal } from '../components/DriverApplicationModal';
 import { DownloadModal } from '../components/DownloadModal';
 
 export default function Home() {
@@ -49,7 +48,7 @@ export default function Home() {
         onOpenDriverApp={handleOpenDriverApp}
       />
 
-      <main className="flex-grow">
+      <main className="grow">
         {/* 2. Hero Section */}
         <Hero
           onOpenDownload={handleOpenDownload}
@@ -102,11 +101,6 @@ export default function Home() {
           setIsMenuModalOpen(false);
           setIsDownloadModalOpen(true);
         }}
-      />
-
-      <DriverApplicationModal
-        isOpen={isDriverModalOpen}
-        onClose={() => setIsDriverModalOpen(false)}
       />
 
       <DownloadModal
