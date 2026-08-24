@@ -1,32 +1,15 @@
 'use client';
-
 import React, { useState } from 'react';
-
-import { 
-  Sparkles, 
-  MapPin, 
-  Clock, 
-  CreditCard, 
-  CheckCircle2, 
-  Navigation, 
-  ShoppingBag, 
-  Search,
-  Flame,
-  PartyPopper,
-  Calendar,
-  FileText,
-  Repeat,
-  Phone
-} from 'lucide-react';
+import { Sparkles, Navigation, Search, FileText, Repeat, Phone } from 'lucide-react';
 import { APP_SCREENS } from '../data/mockData';
 
 export const AppScreenshots: React.FC = () => {
   const [activeScreenIndex, setActiveScreenIndex] = useState(0);
 
   return (
-    <section id="screenshots" className="py-20 bg-gradient-to-b from-[#FDF8F0] via-[#FAF1E3] to-[#FDF8F0] relative overflow-hidden">
+    <section id="screenshots" className="py-20 bg-linear-to-b from-[#FDF8F0] via-[#FAF1E3] to-[#FDF8F0] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#C33600]/10 text-[#C33600] text-xs font-bold uppercase tracking-wider mb-3">
@@ -47,11 +30,10 @@ export const AppScreenshots: React.FC = () => {
             <button
               key={screen.id}
               onClick={() => setActiveScreenIndex(idx)}
-              className={`px-4 sm:px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-2 ${
-                activeScreenIndex === idx
+              className={`px-4 sm:px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-2 ${activeScreenIndex === idx
                   ? 'bg-[#0A5C36] text-white shadow-md scale-105'
                   : 'bg-white text-stone-700 hover:bg-stone-100 border border-stone-200/80 shadow-xs'
-              }`}
+                }`}
             >
               <span className={`w-2 h-2 rounded-full ${activeScreenIndex === idx ? 'bg-[#F5A623]' : 'bg-stone-300'}`} />
               <span>{screen.badge}: {screen.title.split(' ')[0]}</span>
@@ -61,17 +43,16 @@ export const AppScreenshots: React.FC = () => {
 
         {/* 4 Phone Mockups Showcase Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-center">
-          
+
           {/* SCREEN 1: Product Browsing */}
-          <div className={`relative flex flex-col items-center transition-all duration-300 ${
-            activeScreenIndex === 0 ? 'scale-105 ring-4 ring-[#0A5C36]/30 rounded-[44px]' : 'opacity-90 hover:opacity-100'
-          }`}>
-            <div className="w-[260px] sm:w-[270px] h-[540px] bg-stone-900 rounded-[40px] p-2.5 shadow-2xl border-4 border-stone-800 flex flex-col overflow-hidden">
+          <div className={`relative flex flex-col items-center transition-all duration-300 ${activeScreenIndex === 0 ? 'scale-105 ring-4 ring-[#0A5C36]/30 rounded-[44px]' : 'opacity-90 hover:opacity-100'
+            }`}>
+            <div className="w-65 sm:w-67.5 h-135 bg-stone-900 rounded-[40px] p-2.5 shadow-2xl border-4 border-stone-800 flex flex-col overflow-hidden">
               {/* Notch */}
               <div className="w-20 h-4 bg-stone-950 rounded-full mx-auto mb-2 flex items-center justify-center">
                 <div className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
               </div>
-              
+
               {/* Screen Body */}
               <div className="flex-1 bg-[#FAF5EC] rounded-[30px] overflow-hidden flex flex-col text-left font-sans text-stone-800 text-xs">
                 {/* Header */}
@@ -124,14 +105,13 @@ export const AppScreenshots: React.FC = () => {
           </div>
 
           {/* SCREEN 2: Cart & Schedule */}
-          <div className={`relative flex flex-col items-center transition-all duration-300 ${
-            activeScreenIndex === 1 ? 'scale-105 ring-4 ring-[#0A5C36]/30 rounded-[44px]' : 'opacity-90 hover:opacity-100'
-          }`}>
-            <div className="w-[260px] sm:w-[270px] h-[540px] bg-stone-900 rounded-[40px] p-2.5 shadow-2xl border-4 border-stone-800 flex flex-col overflow-hidden">
+          <div className={`relative flex flex-col items-center transition-all duration-300 ${activeScreenIndex === 1 ? 'scale-105 ring-4 ring-[#0A5C36]/30 rounded-[44px]' : 'opacity-90 hover:opacity-100'
+            }`}>
+            <div className="w-65 sm:w-67.5 h-135 bg-stone-900 rounded-[40px] p-2.5 shadow-2xl border-4 border-stone-800 flex flex-col overflow-hidden">
               <div className="w-20 h-4 bg-stone-950 rounded-full mx-auto mb-2 flex items-center justify-center">
                 <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
               </div>
-              
+
               <div className="flex-1 bg-[#FAF5EC] rounded-[30px] overflow-hidden flex flex-col text-left font-sans text-stone-800 text-xs">
                 <div className="bg-[#0A5C36] text-white p-3 pt-2">
                   <span className="font-bold text-[11px]">🛒 Checkout &amp; Scheduling</span>
@@ -189,14 +169,13 @@ export const AppScreenshots: React.FC = () => {
           </div>
 
           {/* SCREEN 3: Live GPS Radar */}
-          <div className={`relative flex flex-col items-center transition-all duration-300 ${
-            activeScreenIndex === 2 ? 'scale-105 ring-4 ring-[#0A5C36]/30 rounded-[44px]' : 'opacity-90 hover:opacity-100'
-          }`}>
-            <div className="w-[260px] sm:w-[270px] h-[540px] bg-stone-900 rounded-[40px] p-2.5 shadow-2xl border-4 border-stone-800 flex flex-col overflow-hidden">
+          <div className={`relative flex flex-col items-center transition-all duration-300 ${activeScreenIndex === 2 ? 'scale-105 ring-4 ring-[#0A5C36]/30 rounded-[44px]' : 'opacity-90 hover:opacity-100'
+            }`}>
+            <div className="w-65 sm:w-67.5 h-135 bg-stone-900 rounded-[40px] p-2.5 shadow-2xl border-4 border-stone-800 flex flex-col overflow-hidden">
               <div className="w-20 h-4 bg-stone-950 rounded-full mx-auto mb-2 flex items-center justify-center">
                 <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
               </div>
-              
+
               <div className="flex-1 bg-[#FAF5EC] rounded-[30px] overflow-hidden flex flex-col text-left font-sans text-stone-800 text-xs relative">
                 {/* Live GPS Map Background simulation */}
                 <div className="absolute inset-0 bg-[#E5E9EC] overflow-hidden">
@@ -207,7 +186,7 @@ export const AppScreenshots: React.FC = () => {
                     <path d="M150,0 L120,300" stroke="#CBD5E1" strokeWidth="10" fill="none" />
                     <path d="M0,180 Q100,160 200,200" stroke="#38BDF8" strokeWidth="4" strokeDasharray="4 2" fill="none" />
                   </svg>
-                  
+
                   {/* Delivery Route Path */}
                   <div className="absolute top-28 left-16 w-3.5 h-3.5 rounded-full bg-[#0A5C36] ring-4 ring-emerald-300" />
                   <div className="absolute top-44 left-24 w-6 h-6 rounded-full bg-[#C33600] text-white flex items-center justify-center shadow-lg animate-bounce">
@@ -250,14 +229,13 @@ export const AppScreenshots: React.FC = () => {
           </div>
 
           {/* SCREEN 4: Order History & Receipts */}
-          <div className={`relative flex flex-col items-center transition-all duration-300 ${
-            activeScreenIndex === 3 ? 'scale-105 ring-4 ring-[#0A5C36]/30 rounded-[44px]' : 'opacity-90 hover:opacity-100'
-          }`}>
-            <div className="w-[260px] sm:w-[270px] h-[540px] bg-stone-900 rounded-[40px] p-2.5 shadow-2xl border-4 border-stone-800 flex flex-col overflow-hidden">
+          <div className={`relative flex flex-col items-center transition-all duration-300 ${activeScreenIndex === 3 ? 'scale-105 ring-4 ring-[#0A5C36]/30 rounded-[44px]' : 'opacity-90 hover:opacity-100'
+            }`}>
+            <div className="w-65 sm:w-67.5 h-135 bg-stone-900 rounded-[40px] p-2.5 shadow-2xl border-4 border-stone-800 flex flex-col overflow-hidden">
               <div className="w-20 h-4 bg-stone-950 rounded-full mx-auto mb-2 flex items-center justify-center">
                 <div className="w-1.5 h-1.5 rounded-full bg-purple-400" />
               </div>
-              
+
               <div className="flex-1 bg-[#FAF5EC] rounded-[30px] overflow-hidden flex flex-col text-left font-sans text-stone-800 text-xs">
                 <div className="bg-[#0A5C36] text-white p-3 pt-2">
                   <span className="font-bold text-[11px]">📜 Order History &amp; Reorder</span>

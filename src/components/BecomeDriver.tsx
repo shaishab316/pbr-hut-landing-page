@@ -1,19 +1,6 @@
 'use client';
-
 import React from 'react';
-
-import { 
-  CheckCircle2, 
-  DollarSign, 
-  Clock, 
-  Navigation, 
-  BellRing, 
-  ShieldCheck, 
-  Sparkles,
-  ArrowRight,
-  TrendingUp,
-  Award
-} from 'lucide-react';
+import { DollarSign, Clock, Navigation, BellRing, ShieldCheck, ArrowRight, TrendingUp } from 'lucide-react';
 
 interface BecomeDriverProps {
   onOpenDriverApp: () => void;
@@ -28,10 +15,10 @@ export const BecomeDriver: React.FC<BecomeDriverProps> = ({ onOpenDriverApp }) =
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           {/* Left Column: Driver Value Proposition */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
-            
+
             {/* Top Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F5A623]/20 border border-[#F5A623]/30 text-[#F5A623] text-xs font-bold uppercase tracking-wider mb-4">
               <TrendingUp className="w-3.5 h-3.5" />
@@ -51,7 +38,7 @@ export const BecomeDriver: React.FC<BecomeDriverProps> = ({ onOpenDriverApp }) =
 
             {/* 4 Core Driver Perks / Bullet Points with Gold Accents */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full mb-8">
-              
+
               <div className="bg-black/25 backdrop-blur-xs border border-white/15 rounded-2xl p-4 flex items-start gap-3.5">
                 <div className="p-2 rounded-xl bg-[#F5A623] text-stone-950 flex-shrink-0">
                   <Clock className="w-5 h-5" />
@@ -116,7 +103,7 @@ export const BecomeDriver: React.FC<BecomeDriverProps> = ({ onOpenDriverApp }) =
           {/* Right Column: Driver App Phone & Earnings Mockup */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end">
             <div className="relative w-full max-w-[320px] sm:max-w-[340px]">
-              
+
               {/* Background Glow */}
               <div className="absolute inset-0 bg-[#F5A623]/20 rounded-[44px] blur-2xl transform scale-95" />
 
@@ -129,7 +116,7 @@ export const BecomeDriver: React.FC<BecomeDriverProps> = ({ onOpenDriverApp }) =
 
                 {/* Inner Screen */}
                 <div className="bg-[#FAF5EC] rounded-[30px] p-3.5 space-y-3 text-left">
-                  
+
                   {/* Driver Header */}
                   <div className="flex items-center justify-between pb-2 border-b border-stone-200">
                     <div className="flex items-center gap-2">
@@ -175,7 +162,7 @@ export const BecomeDriver: React.FC<BecomeDriverProps> = ({ onOpenDriverApp }) =
                       <button className="py-2 rounded-xl bg-stone-100 text-stone-600 text-[10px] font-bold">
                         Decline
                       </button>
-                      <button 
+                      <button
                         onClick={onOpenDriverApp}
                         className="py-2 rounded-xl bg-[#0A5C36] text-white text-[10px] font-extrabold text-center hover:bg-[#08482a]"
                       >
