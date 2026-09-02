@@ -1,23 +1,7 @@
 'use client';
-
 import React, { useState } from 'react';
-
 import { Logo } from './Logo';
-import { 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Instagram, 
-  Facebook, 
-  MessageCircle, 
-  Share2, 
-  Heart,
-  ShieldCheck,
-  ChevronRight,
-  Send,
-  CheckCircle2,
-  Sparkles
-} from 'lucide-react';
+import { MapPin, Phone, Mail, Instagram, Facebook, MessageCircle, Share2, ShieldCheck, Send, CheckCircle2, Sparkles } from 'lucide-react';
 
 interface FooterProps {
   onOpenMenu: () => void;
@@ -26,12 +10,7 @@ interface FooterProps {
   onOpenDownload: () => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({
-  onOpenMenu,
-  onOpenEvents,
-  onOpenDriverApp,
-  onOpenDownload
-}) => {
+export const Footer: React.FC<FooterProps> = ({ onOpenMenu, onOpenEvents, onOpenDriverApp, onOpenDownload }) => {
   const [waitlistEmail, setWaitlistEmail] = useState('');
   const [isJoined, setIsJoined] = useState(false);
 
@@ -46,14 +25,14 @@ export const Footer: React.FC<FooterProps> = ({
   return (
     <footer id="contact" className="bg-[#101412] text-stone-300 pt-16 pb-12 border-t border-stone-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-14 border-b border-stone-800/80">
-          
+
           {/* Brand Info & Physical Location */}
           <div className="lg:col-span-4 space-y-4">
             <Logo variant="dark" showSubtitle={true} size="md" />
-            
+
             <p className="text-xs sm:text-sm text-stone-400 leading-relaxed max-w-sm">
               Authentic Jamaican smoked jerk ribs, wood-fired pizzas, rotisserie chicken, and party event supplies delivered right to your gate with real-time GPS courier tracking.
             </p>
@@ -174,7 +153,7 @@ export const Footer: React.FC<FooterProps> = ({
                 Join Waitlist
               </h4>
             </div>
-            
+
             <p className="text-xs text-stone-400 leading-relaxed">
               Be the first to get exclusive discount drops, seasonal Jerk deals &amp; VIP event armbands.
             </p>
