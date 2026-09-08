@@ -19,7 +19,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenMenu, onOpenEvents, onOpen
     if (!waitlistEmail) return;
     setIsJoined(true);
     setTimeout(() => {
-      // Keep state or allow re-entry
     }, 3000);
   };
   return (
@@ -34,17 +33,17 @@ export const Footer: React.FC<FooterProps> = ({ onOpenMenu, onOpenEvents, onOpen
             <Logo variant="dark" showSubtitle={true} size="md" />
 
             <p className="text-xs sm:text-sm text-stone-400 leading-relaxed max-w-sm">
-              Authentic Jamaican smoked jerk ribs, wood-fired pizzas, rotisserie chicken, and party event supplies delivered right to your gate with real-time GPS courier tracking.
+              Authentic Jamaican and International Cuisine meals. Smoked Jerk Ribs, Jerk Pork, Pizzas, Rotisserie Chicken, and party event supplies delivered right to your gate with real-time GPS courier tracking.
             </p>
 
             <div className="space-y-2.5 pt-2 text-xs text-stone-300">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#F5A623] shrink-0 mt-0.5" />
-                <span>14 Constant Spring Road, Kingston 10, Jamaica</span>
+                <span>Albion, St. Thomas, Jamaica</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#F5A623] shrink-0" />
-                <span>+1 (876) 555-PBRH (7274)</span>
+                <span>+1 (876) 531-1946</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#F5A623] shrink-0" />
@@ -95,11 +94,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenMenu, onOpenEvents, onOpen
                 <a href="#community" className="hover:text-[#F5A623] transition-colors">About Our Story</a>
               </li>
               <li>
-                <button onClick={onOpenDriverApp} className="hover:text-[#F5A623] transition-colors text-left cursor-pointer">
-                  Become a Driver
-                </button>
-              </li>
-              <li>
                 <a href="#offerings" className="hover:text-[#F5A623] transition-colors">Catering Inquiries</a>
               </li>
               <li>
@@ -120,6 +114,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenMenu, onOpenEvents, onOpen
               <li>
                 <button onClick={onOpenDriverApp} className="hover:text-[#F5A623] transition-colors text-left flex items-center gap-1 cursor-pointer">
                   <span>Become a Driver</span>
+                </button>
+              </li>
+              <li>
+                <button onClick={onOpenDriverApp} className="hover:text-[#F5A623] transition-colors text-left cursor-pointer">
+                  Become a Rider
                 </button>
               </li>
               <li>
