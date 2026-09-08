@@ -13,7 +13,7 @@ export const HowItWorks: React.FC = () => {
     {
       num: '01',
       title: 'Browse & Choose',
-      description: 'Explore authentic Caribbean barbecue, wood-fired pizzas, rotisserie chicken, or event party gear in one unified app.',
+      description: 'Explore authentic Caribbean barbecue, wood-fired Jerk Pork,  Pizzas, Rotisserie chicken, or event party gear in one unified app.',
       icon: ShoppingBag,
       iconBg: 'bg-[#0A5C36]',
       iconColor: 'text-white',
@@ -31,7 +31,7 @@ export const HowItWorks: React.FC = () => {
     {
       num: '03',
       title: 'Pay Securely',
-      description: 'Checkout easily using Apple Pay, Google Pay, local or international credit cards, and PayPal with bank-grade security.',
+      description: 'Checkout easily using Google Pay, local or international credit cards, and PayPal with bank-grade security.',
       icon: ShieldCheck,
       iconBg: 'bg-[#C33600]',
       iconColor: 'text-white',
@@ -40,7 +40,7 @@ export const HowItWorks: React.FC = () => {
     {
       num: '04',
       title: 'Track Live to Your Door',
-      description: 'Watch your dedicated courier navigate the Kingston map in real time with live GPS updates and exact arrival countdown.',
+      description: 'Watch your dedicated courier navigate the St. Thomas and Kingston map in real time with live GPS updates and exact arrival countdown.',
       icon: Navigation,
       iconBg: 'bg-[#0A5C36]',
       iconColor: 'text-[#F5A623]',

@@ -71,7 +71,7 @@ export const DualOffering: React.FC<DualOfferingProps> = ({ onOpenMenu, onOpenEv
                 Restaurant Meals
               </h3>
               <p className="text-stone-600 text-sm sm:text-base leading-relaxed mb-6">
-                Freshly smoked Caribbean jerk ribs, 48-hour rotisserie chicken, crispy wood-fired jerk pizzas, gourmet pepper jack burgers, and traditional Jamaican sides like golden festival and sweet plantains.
+                We serve a wide selection of meals, from fast food Burgers, freshly baked Pizzas, smoked Caribbean Jerk Ribs, Jerk Pork, Rotisserie Chicken, to authentic Jamaican and International dishes. List of some sides like golden festival, sweet plantains, and mashed potatoes, Golden food (Turn Cornmeal)
               </p>
 
               {/* Highlights list */}
@@ -80,7 +80,7 @@ export const DualOffering: React.FC<DualOfferingProps> = ({ onOpenMenu, onOpenEv
                   <span className="w-5 h-5 rounded-full bg-[#0A5C36]/10 text-[#0A5C36] flex items-center justify-center shrink-0">
                     <Check className="w-3.5 h-3.5 stroke-3" />
                   </span>
-                  <span>Cooked to order with authentic Jamaican Scotch bonnet &amp; pimento</span>
+                  <span>Cooked to order with authentic Jamaican Scotch bonnet & pimento</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <span className="w-5 h-5 rounded-full bg-[#0A5C36]/10 text-[#0A5C36] flex items-center justify-center shrink-0">

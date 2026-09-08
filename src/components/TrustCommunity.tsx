@@ -19,11 +19,11 @@ export const TrustCommunity: React.FC = () => {
               </div>
 
               <h2 className="text-3xl sm:text-4xl font-extrabold font-display text-stone-900 tracking-tight leading-tight">
-                A Family Business Serving Kingston &amp; St. Andrew, Jamaica
+                A Family Business Serving Kingston & St. Andrew, Jamaica
               </h2>
 
               <p className="text-stone-700 text-sm sm:text-base leading-relaxed">
-                What began as a family roadside smokehouse and neighborhood party supply depot in Kingston has blossomed into Jamaica&apos;s most reliable dual-purpose mobile marketplace.
+                What began as a family in St. Thomas has blossomed into Jamaica's most reliable dual-purpose mobile marketplace.
               </p>
 
               <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
